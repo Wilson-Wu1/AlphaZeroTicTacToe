@@ -1,7 +1,7 @@
 # AlphaZeroTicTacToe
 An AlphaZero approach to the tic tac toe game. The program allows the player to compete against the program.This program implements pure monte carlo tree search with a number of random playouts to create the best tile to play.
 
- -----------------------------------------------------------------------------------------------------------------------------------
+
  Pure MCTS is a greedy algorithm, choosing the optimal solution at a given state. 
 
  Due to the random nature of random playouts, a 100% guranatee of winning is not possible without other game logic.
@@ -14,7 +14,7 @@ An AlphaZero approach to the tic tac toe game. The program allows the player to 
 
  In my testings, I have the player go first because this gives a big disadvantage to the robot.
  
- -----------------------------------------------------------------------------------------------------------------------------------
+
  Case 1) 
  1. The player places a x on any corner. The robot will place an o in the center.
  2. The player places an x in the opposite corner of the first x. 
@@ -31,14 +31,14 @@ An AlphaZero approach to the tic tac toe game. The program allows the player to 
  But the change of weights have led to other unwinnable states
 
 
- -------------------
+
  number of playouts = 1000
  playerWin = -2
  robotWin = +2
  Draw = +1
  x = player
  o = robot
- -------------------
+ 
 I chose 1000 to be my number of playouts because the only case where it loses is the Case 1 shown below.
 Playouts less than 1000 have also resulted in DIFFERENT unwinnable states.
 More playouts creates a more even distribution to the possible playout states.
