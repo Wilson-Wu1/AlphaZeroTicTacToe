@@ -20,18 +20,11 @@ An AlphaZero approach to the tic tac toe game. The program allows the player to 
  2. The player places an x in the opposite corner of the first x. 
  3. If the robot places the next o in any 2 corners, the robot has lost.
  4. The player will place an x in the last remaining corner to create an unwinnable state for the robot.
-
- o |   | x                 o |   | x    
- ---------  Player Goes    ---------
-   | o |       --->          | o |  
- ---------                 ---------
- x |   |                   x |   | x
  
  This unwinnable state is preventable by having the robot place an o in a non-corner tile during its first turn by changing wieghts.
  But the change of weights have led to other unwinnable states
 
-
-
+##WEIGHTS USED
  number of playouts = 1000
  playerWin = -2
  robotWin = +2
