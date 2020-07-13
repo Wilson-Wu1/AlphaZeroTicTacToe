@@ -1,5 +1,7 @@
 # AlphaZeroTicTacToe
-Created for SFU CMPT 310, Artificial Intelligence Survey. An AlphaZero approach to the tic tac toe game. The program allows the player to compete against the program.This program implements pure monte carlo tree search with a number of random playouts to create the best tile to play.
+Created for SFU CMPT 310, Artificial Intelligence Survey. 
+
+An AlphaZero approach to the tic tac toe game. The program allows the player to compete against the program.This program implements pure monte carlo tree search with a number of random playouts to create the best tile to play.
 
 
  Pure MCTS is a greedy algorithm, choosing the optimal solution at a given state. 
@@ -24,7 +26,7 @@ Created for SFU CMPT 310, Artificial Intelligence Survey. An AlphaZero approach 
  This unwinnable state is preventable by having the robot place an o in a non-corner tile during its first turn by changing wieghts.
  But the change of weights have led to other unwinnable states
 
-## WEIGHTS USED
+## Weights Used
  number of playouts = 1000
  playerWin = -2
  robotWin = +2
