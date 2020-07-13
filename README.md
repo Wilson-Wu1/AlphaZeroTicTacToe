@@ -15,7 +15,7 @@ An AlphaZero approach to the tic tac toe game. The program allows the player to 
  In my testings, I have the player go first because this gives a big disadvantage to the robot.
  
 
- Case 1) 
+ ## Case 1) 
  1. The player places a x on any corner. The robot will place an o in the center.
  2. The player places an x in the opposite corner of the first x. 
  3. If the robot places the next o in any 2 corners, the robot has lost.
@@ -24,7 +24,7 @@ An AlphaZero approach to the tic tac toe game. The program allows the player to 
  This unwinnable state is preventable by having the robot place an o in a non-corner tile during its first turn by changing wieghts.
  But the change of weights have led to other unwinnable states
 
-##WEIGHTS USED
+## WEIGHTS USED
  number of playouts = 1000
  playerWin = -2
  robotWin = +2
