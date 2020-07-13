@@ -13,7 +13,7 @@ An AlphaZero approach to the tic tac toe game. The program allows the player to 
  Due to the restrictions of our assignment (pure MCTS), there is 1 case where the player can win (given the player goes first).
 
  In my testings, I have the player go first because this gives a big disadvantage to the robot.
- However, the user can pick who gets to go first.
+ 
  -----------------------------------------------------------------------------------------------------------------------------------
  Case 1) 
  1. The player places a x on any corner. The robot will place an o in the center.
@@ -27,8 +27,10 @@ An AlphaZero approach to the tic tac toe game. The program allows the player to 
  ---------                 ---------
  x |   |                   x |   | x
  
- This unwinnable state is preventable by having the robot place an o in a non-corner tile during its first turn by changing wieghts. 
- But the change of weights have led to other unwinnable states.
+ This unwinnable state is preventable by having the robot place an o in a non-corner tile during its first turn by changing wieghts.
+ But the change of weights have led to other unwinnable states
+
+
  -------------------
  number of playouts = 1000
  playerWin = -2
